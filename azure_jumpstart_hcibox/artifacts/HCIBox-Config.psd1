@@ -138,7 +138,7 @@
     AKSCloudConfigdir                    = "C:\ClusterStorage\S2D_vDISK1\aks\CloudConfig"
     AKSCloudSvcidr                       = "192.168.1.15/24"
     AKSVlanID                            = "200"
-    rbLocation                           = "eastus"
+    rbLocation                           = "westeurope"
     rbCustomLocationName                 = "hcibox-rb-cl"
     rbIp                                 = "192.168.200.201"
     rbIp2                                = "192.168.200.203"
