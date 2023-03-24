@@ -42,7 +42,7 @@ Connect-AzAccount -ServicePrincipal -Subscription $env:subscriptionId -Tenant $e
 Write-Host "Registering the Cluster" -ForegroundColor Green -BackgroundColor Black
 $armtoken = Get-AzAccessToken
 $clustername = 'HCIBox-Cluster'
-$azureLocation = 'eastus'
+$azureLocation = 'westeurope'
 Register-AzStackHCI -SubscriptionId $env:subscriptionId -ComputerName $SDNConfig.HostList[0] -AccountId $env:spnClientID -ArmAccessToken $armtoken.Token -EnableAzureArcServer -Credential $adcred -Region $azureLocation -ResourceName $clustername -ResourceGroupName $env:resourceGroup
 Move-Item -Path RegisterHCI_* -Destination $Env:HCIBoxLogsDir\RegisterHCI_PS_Output.log
 
